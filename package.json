@@ -1,0 +1,11 @@
+{
+  "name": "grupo_maricotinha",
+  "version": "1.0.0",
+  "title": "Grupo Maricotinha",
+  "homepage": "http://www.grupomaricotinha.com.br",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
