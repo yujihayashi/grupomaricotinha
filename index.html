@@ -40,36 +40,140 @@
 			</div> <!-- .extra-header -->
 			<div class="extra-central">
 				<div class="site-central">
-					<div class="container">
-						<div class="box-header text-center">
-							<h1>Seja bem vindo!</h1>
-							<p class="text-primary">
-								Clique em um de nossos quadros e conheça alguns de nossos espaços.
-							</p>
+					<div class="container-fluid">
+						<div class="box-home">
+							<div class="box-header text-center">
+								<h1 class="media-heading">Seja bem vindo!</h1>
+								<p class="desc">
+									<span class="icon-flower-left icone"></span>
+									<span class="text">Clique em um de nossos quadros e conheça alguns de nossos espaços.</span>
+									<span class="icon-flower-right icone"></span>
+								</p>
 							</div> <!-- .box-header -->
-						</div> <!-- .container -->
-					</div> <!-- .site-central -->
-				</div> <!-- .extra-central -->
-				<div class="extra-footer">
-					<div class="site-footer">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-3">
-									<a href="#" target="_blank" title="Acesse nosso Facebook"><span class="icon-facebook"></span><span class="sr-only">Facebook</span></a>
-									<a href="#" target="_blank" title="Acesse nosso Twitter"><span class="icon-twitter"></span><span class="sr-only">Twitter</span></a>
-									<a href="#" target="_blank" title="Acesse nosso Instagram"><span class="icon-instagram"></span><span class="sr-only">Instagram</span></a>
-								</div> <!-- .col-md-3 -->
-								<div class="col-md-6 text-center">
-									<small>© Grupo Milene Foseca 2014. Todos os direitos reservados.</small>
-								</div> <!-- .col-md-6 -->
-								<div class="col-md-3 text-right">
-									<a href="#" class="btn btn-primary">Fale conosco!</a>
-								</div> <!-- .col-md-3 -->
-							</div> <!-- .row -->
-						</div> <!-- .container -->
-					</div> <!-- .site-footer -->
-				</div> <!-- .extra-footer -->
-			</div> <!-- .site-geral -->
-		</div> <!-- .extra-geral -->
-	</body>
-	</html>
+							<div class="box-content">
+								<a href="http://www.maricotinhaboulevard.com.br" class="empresa maricotinha-boulevard" title="Clique para conhecer" target="_blank"><span class="icon-maricotinha-boulevard"></span><span class="sr-only">Maricotinha Boulevard</span></a>
+								<span class="inline-block">
+									<a href="http://www.botecomodesto.com.br" class="empresa boteco-modesto" title="Clique para conhecer" target="_blank"><span class="icon-boteco-modesto"></span><span class="sr-only">Boteco Modesto</span></a>
+									<a href="#" class="empresa favela-chic" title="Clique para conhecer" target="_blank" data-toggle="modal" data-target="#modal-favela-chic"><span class="icon-favela-chic"></span><span class="sr-only">Favela Chic</span></a>
+									<br>
+									<a href="http://www.corticopub.com.br" class="empresa cortico-pub" title="Clique para conhecer" target="_blank"><span class="icon-cortico-pub"></span><span class="sr-only">Cortiço Pub</span></a>
+									<a href="#" class="empresa duquesa" title="Clique para conhecer" target="_blank" data-toggle="modal" data-target="#modal-duquesa"><span class="icon-duquesa"></span><span class="sr-only">Duquesa</span></a>
+									<a href="http://www.barmaricotinha.com.br" class="empresa maricotinha-bar" title="Clique para conhecer" target="_blank"><span class="icon-maricotinha-bar"></span><span class="sr-only">Maricotinha Bar</span></a>
+								</span>
+								<a href="#" class="empresa baronesa" title="Clique para conhecer" target="_blank" data-toggle="modal" data-target="#modal-baronesa"><span class="icon-baronesa"></span><span class="sr-only">Baronesa</span></a>
+							</div> <!-- .box-content -->
+						</div> <!-- .box-home -->
+					</div> <!-- .container -->
+				</div> <!-- .site-central -->
+			</div> <!-- .extra-central -->
+			<div class="extra-footer">
+				<div class="site-footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 footer-left">
+								<a href="#" target="_blank" title="Acesse nosso Facebook"><span class="icon-facebook"></span><span class="sr-only">Facebook</span></a>
+								<a href="#" target="_blank" title="Acesse nosso Twitter"><span class="icon-twitter"></span><span class="sr-only">Twitter</span></a>
+								<a href="#" target="_blank" title="Acesse nosso Instagram"><span class="icon-instagram"></span><span class="sr-only">Instagram</span></a>
+							</div> <!-- .col-md-3 -->
+							<div class="col-md-6 text-center footer-center">
+								<small>© Grupo Milene Foseca 2014. Todos os direitos reservados.</small>
+							</div> <!-- .col-md-6 -->
+							<div class="col-md-3 text-right footer-right">
+								<a href="#" class="btn btn-primary" title="Envie-nos uma mensagem!" data-toggle="modal" data-target="#modal-contato">Fale conosco!</a>
+							</div> <!-- .col-md-3 -->
+						</div> <!-- .row -->
+					</div> <!-- .container -->
+				</div> <!-- .site-footer -->
+			</div> <!-- .extra-footer -->
+		</div> <!-- .site-geral -->
+	</div> <!-- .extra-geral -->
+	<div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title text-primary" id="myModalLabel">Fale conosco!</h4>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="form-group">
+							<label class="small" for="fNome">Seu nome:</label>
+							<input type="text" class="form-control" id="fNome">
+						</div> <!-- .form-group -->
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="small" for="fEmail">E-mail:</label>
+									<input type="email" class="form-control" id="fEmail">
+								</div> <!-- .form-group -->
+							</div> <!-- .col-md-6 -->
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="small" for="fTelefone">Telefone:</label>
+									<input type="text" class="form-control" id="fTelefone">
+								</div> <!-- .form-group -->
+							</div> <!-- .col-md-6 -->
+						</div> <!-- .row -->
+						<div class="form-group">
+							<label class="small" for="fMensagem">Mensagem:</label>
+							<textarea type="text" class="form-control" id="fMensagem" rows="5"></textarea>
+						</div> <!-- .form-group -->
+					</form>
+				</div> <!-- .modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
+					<button type="button" class="btn btn-default">Enviar</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- #modal-contato -->
+	<div class="modal fade" id="modal-baronesa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title text-primary" id="myModalLabel">Baronesa</h4>
+				</div>
+				<div class="modal-body">
+					...
+				</div> <!-- .modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- #modal-baronesa -->
+	<div class="modal fade" id="modal-duquesa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title text-primary" id="myModalLabel">Duquesa</h4>
+				</div>
+				<div class="modal-body">
+					...
+				</div> <!-- .modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- #modal-duquesa -->
+	<div class="modal fade" id="modal-favela-chic" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+					<h4 class="modal-title text-primary" id="myModalLabel">Favela Chic</h4>
+				</div>
+				<div class="modal-body">
+					...
+				</div> <!-- .modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Voltar</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- #modal-favela-chic -->
+</body>
+</html>
